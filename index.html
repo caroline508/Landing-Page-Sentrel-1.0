@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231E2D44'/><text x='30' y='47' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='900' font-size='44' fill='%23F8F3E8'>S</text><circle cx='50' cy='50' r='6' fill='%234F7142'/></svg>">
-<title>Sentrel for Trades — Never miss another job</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230F3D5C'/><text x='30' y='47' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='900' font-size='44' fill='%23F0F7FA'>S</text><circle cx='50' cy='50' r='6' fill='%23E07B27'/></svg>">
+<title>Sentrel for HVAC — Never miss another service call</title>
 <style>
   :root {
-    --ink: #1E2D44;
-    --ink-soft: #5A6477;
-    --paper: #F8F3E8;
-    --paper-2: #ECE1CB;
-    --rule: #D9CCB2;
-    --accent: #4F7142;
-    --accent-dark: #38522D;
-    --check: #1E2D44;
+    --ink: #0F3D5C;
+    --ink-soft: #5A7A8E;
+    --paper: #F0F7FA;
+    --paper-2: #DCEEF5;
+    --rule: #B8DCEC;
+    --accent: #E07B27;
+    --accent-dark: #B85D14;
+    --check: #0F3D5C;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -60,7 +60,7 @@
   .hero h1 em {
     font-style: normal;
     color: var(--accent);
-    background-image: linear-gradient(transparent 62%, rgba(79, 113, 66, 0.28) 62%);
+    background-image: linear-gradient(transparent 62%, rgba(224, 123, 39, 0.28) 62%);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: background-size 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 0.5s;
@@ -162,6 +162,12 @@
     padding: 14px 28px;
   }
   .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+  /* Force white text on nav button (overrides .nav-links a color) */
+  .nav-links a.btn,
+  .nav-links a.btn:hover,
+  .nav-links a.btn:visited {
+    color: #ffffff;
+  }
 
   /* ============ HERO ============ */
   .hero { padding: 80px 0 60px; position: relative; }
@@ -270,7 +276,7 @@
     color: var(--paper);
   }
   .pain-card p {
-    color: #C7B89D;
+    color: #B8DCEC;
     font-size: 16px;
   }
 
@@ -347,8 +353,8 @@
     font-size: 15px;
   }
   .msg.from-sentrel {
-    background: #F1E5D0;
-    border-color: #D8C3A4;
+    background: #FBE9D8;
+    border-color: #F0CDA6;
   }
   .msg-label {
     font-size: 11px;
@@ -434,7 +440,7 @@
   }
   .price-row strong { font-weight: 700; }
   .pilot-note {
-    background: #F1E5D0;
+    background: #FBE9D8;
     border-left: 3px solid var(--accent);
     padding: 16px 20px;
     margin-top: 24px;
@@ -500,9 +506,9 @@
     <div class="logo">Sentrel<span>.</span></div>
     <div class="nav-links">
       <a href="#how">How it works</a>
-      <a href="#features">Built for trades</a>
+      <a href="#features">Built for HVAC</a>
       <a href="#pricing">Pricing</a>
-      <a href="#demo" class="btn"><span>Book a walkthrough</span></a>
+      <a href="https://calendly.com/caroline-sentrel/30min" target="_blank" rel="noopener" class="btn"><span>Book a walkthrough</span></a>
     </div>
   </div>
 </nav>
@@ -510,14 +516,14 @@
 <header class="hero">
   <div class="container">
     <div class="hero-tag reveal">
-      <span class="ring-icon">&#9742;</span> For home service businesses
+      <span class="ring-icon">&#9742;</span> For HVAC contractors
     </div>
     <h1 class="reveal">When the phone rings, <em>we pick it up.</em></h1>
     <p class="lead reveal">
-      We answer every call, book the job, and text you the details. You keep working.
+      We answer every call, book the job, and text you the details. You stay on the truck.
     </p>
     <div class="hero-ctas reveal">
-      <a href="#demo" class="btn btn-lg"><span>Book a 15-min walkthrough</span></a>
+      <a href="https://calendly.com/caroline-sentrel/30min" target="_blank" rel="noopener" class="btn btn-lg"><span>Book a 15-min walkthrough</span></a>
       <a href="#how" class="btn btn-ghost"><span>See how it works</span></a>
     </div>
     <div class="hero-meta reveal">
@@ -531,10 +537,10 @@
     <div class="stats-grid">
       <div class="reveal">
         <div class="stat-num"><span>1 in 3</span></div>
-        <div class="stat-label">calls to small contractors goes unanswered</div>
+        <div class="stat-label">calls to small HVAC shops goes unanswered</div>
       </div>
       <div class="reveal">
-        <div class="stat-num"><span data-count-to="280" data-prefix="$">$0</span></div>
+        <div class="stat-num"><span data-count-to="320" data-prefix="$">$0</span></div>
         <div class="stat-label">average lost on a missed service call</div>
       </div>
       <div class="reveal">
@@ -548,9 +554,9 @@
 <section class="block pain">
   <div class="container">
     <div class="eyebrow reveal">You know the drill</div>
-    <h2 class="reveal">The phone is ringing. You're on a job.</h2>
-    <p class="section-lead reveal" style="color:#C7B89D">
-      Jobs go to whoever picks up first. You can't pick up if you're already on one.
+    <h2 class="reveal">The phone is ringing. You're on a service call.</h2>
+    <p class="section-lead reveal" style="color:#B8DCEC">
+      Jobs go to whoever picks up first. You can't pick up if you're already in a crawl space.
     </p>
     <div class="pain-grid">
       <div class="pain-card reveal">
@@ -574,7 +580,7 @@
     <div class="eyebrow reveal">How it works</div>
     <h2 class="reveal">A real conversation. Just not one you have to have.</h2>
     <p class="section-lead reveal">
-      Sounds like an office manager who knows your business. Asks the right questions. Sends you the details.
+      Sounds like a service coordinator who knows your business. Asks the right questions. Sends you the details.
     </p>
 
     <div class="steps">
@@ -590,14 +596,14 @@
           <div class="step-num">2</div>
           <div class="step-body">
             <h3>We ask the right questions.</h3>
-            <p>Address. What's broken. How urgent. Photos by text. Emergencies route to your cell.</p>
+            <p>Address. System type. What's wrong. How urgent. Photos by text. Emergencies route to your cell.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-body">
             <h3>You get a text.</h3>
-            <p>Name, address, problem, photos, time slot — already on the calendar.</p>
+            <p>Name, address, system, problem, photos, time slot — already on the calendar.</p>
           </div>
         </div>
       </div>
@@ -621,19 +627,16 @@
         </div>
 
         <div class="msg from-sentrel phone-msg" data-step="3">
-          <div class="msg-label">New job booked</div>
+          <div class="msg-label">New service call booked</div>
           <div class="msg-body">
-            <strong>Linda Hernandez</strong><br>
-            412 Oak St, Springfield<br>
-            AC not cooling — house is 85° — photo attached<br>
-            <strong>Booked: Today, 2:00–4:00 PM</strong>
+            <strong>Linda Hernandez</strong><br>412 Oak St, Springfield<br>AC not cooling — house is 85° — photo attached<br><strong>Booked: Today, 2:00–4:00 PM</strong>
           </div>
         </div>
 
         <div class="msg from-sentrel phone-msg" data-step="4">
           <div class="msg-label">Heads up</div>
           <div class="msg-body">
-            Linda was a customer in Sept '24 (water heater). Repeat — text her your ETA.
+            Linda was a customer in Sept '24 (system tune-up). Repeat — text her your ETA.
           </div>
         </div>
 
@@ -648,32 +651,32 @@
 
 <section class="block features" id="features">
   <div class="container">
-    <div class="eyebrow reveal">Built for trades</div>
+    <div class="eyebrow reveal">Built for HVAC</div>
     <h2 class="reveal">It works the way you already work.</h2>
     <p class="section-lead reveal">
-      Built for shops that still print invoices and schedule on a clipboard.
+      Built for HVAC shops that still print invoices and schedule on a clipboard.
     </p>
 
     <div class="feature-grid">
       <div class="feature reveal">
         <div class="check">&#10003;</div>
         <div>
-          <h3>Knows an emergency when it hears one.</h3>
-          <p>Trained on thousands of real service calls. Emergencies route straight to your cell.</p>
+          <h3>Knows an emergency from a tune-up.</h3>
+          <p>Trained on thousands of real HVAC calls. No-cool emergencies route straight to your cell.</p>
         </div>
       </div>
       <div class="feature reveal">
         <div class="check">&#10003;</div>
         <div>
           <h3>Photos by text, attached to the job.</h3>
-          <p>Your tech rolls up knowing what they're walking into.</p>
+          <p>Your tech rolls up knowing the system, age, and what they're walking into.</p>
         </div>
       </div>
       <div class="feature reveal">
         <div class="check">&#10003;</div>
         <div>
           <h3>Sends ETAs automatically.</h3>
-          <p>Cuts no-shows and "where's my guy?" callbacks.</p>
+          <p>Cuts no-shows and "where's my tech?" callbacks.</p>
         </div>
       </div>
       <div class="feature reveal">
@@ -686,8 +689,8 @@
       <div class="feature reveal">
         <div class="check">&#10003;</div>
         <div>
-          <h3>Nights, weekends, holidays.</h3>
-          <p>The phone is always covered. Routine calls get booked for Monday.</p>
+          <h3>Nights, weekends, heat waves.</h3>
+          <p>The phone is always covered. Routine calls get booked for tomorrow.</p>
         </div>
       </div>
       <div class="feature reveal">
@@ -704,11 +707,11 @@
 <section class="quote-section">
   <div class="container">
     <blockquote class="reveal">
-      We were missing 15 calls a week. Sentrel paid for itself in the first month — booked two big install jobs that would've gone to the next shop in the search results.
+      We were missing 15 calls a week in the heat of summer. Sentrel paid for itself in the first month — booked two big system installs that would've gone to the next shop in the search results.
     </blockquote>
     <div class="attribution reveal">
       <strong>Tom R.</strong>
-      Owner, Riverside Heating &amp; Plumbing
+      Owner, Riverside Heating &amp; Air
     </div>
   </div>
 </section>
@@ -722,16 +725,16 @@
     </p>
 
     <div class="pricing-card reveal">
-      <h3>Shop Plan</h3>
-      <p>For shops with 3–25 trucks.</p>
+      <h3>HVAC Shop Plan</h3>
+      <p>For HVAC shops with 3–25 trucks.</p>
       <div class="price-row"><span>Monthly base</span><strong>$299/mo</strong></div>
       <div class="price-row"><span>Per call answered &amp; qualified</span><strong>$2.50</strong></div>
-      <div class="price-row"><span>Per estimate booked</span><strong>$8</strong></div>
+      <div class="price-row"><span>Per service call booked</span><strong>$8</strong></div>
       <div class="price-row"><span>After-hours coverage</span><strong>Included</strong></div>
       <div class="price-row"><span>Setup &amp; onboarding</span><strong>Free during pilot</strong></div>
 
       <div class="pilot-note">
-        <strong>60-day pilot.</strong> If we don't book more jobs than we cost, you don't pay the base. Cancel anytime.
+        <strong>60-day pilot.</strong> If we don't book more service calls than we cost, you don't pay the base. Cancel anytime.
       </div>
     </div>
   </div>
@@ -739,16 +742,16 @@
 
 <section class="final-cta" id="demo">
   <div class="container">
-    <h2 class="reveal">Stop losing jobs to voicemail.</h2>
+    <h2 class="reveal">Stop losing calls to voicemail.</h2>
     <p class="reveal">15 minutes. Hear what your phone sounds like with Sentrel on it.</p>
-    <a href="#" class="btn btn-lg reveal"><span>Book a walkthrough</span></a>
+    <a href="https://calendly.com/caroline-sentrel/30min" target="_blank" rel="noopener" class="btn btn-lg reveal"><span>Book a walkthrough</span></a>
   </div>
 </section>
 
 <footer>
   <div class="container">
     <div class="logo">Sentrel<span>.</span></div>
-    <div style="margin-top: 8px;">Built for the trades. Made in the USA. &copy; Sentrel 2026.</div>
+    <div style="margin-top: 8px;">Built for HVAC. Made in the USA. &copy; Sentrel 2026.</div>
   </div>
 </footer>
 
@@ -768,7 +771,7 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(el => revealObs.observe(el));
 
-  // Hero highlight: draw the green underline behind "we pick it up" shortly after load.
+  // Hero highlight: draw the underline behind the highlighted phrase shortly after load.
   window.addEventListener('load', () => {
     requestAnimationFrame(() => {
       document.querySelector('.hero h1')?.classList.add('lit');
