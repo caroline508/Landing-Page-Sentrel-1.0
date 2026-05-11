@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230F3D5C'/><text x='30' y='47' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='900' font-size='44' fill='%23F0F7FA'>S</text><circle cx='50' cy='50' r='6' fill='%23E07B27'/></svg>">
-<title>Sentrel for HVAC &mdash; Never miss another service call</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231F3D24'/><text x='30' y='47' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='900' font-size='44' fill='%23F4F8E8'>S</text><circle cx='50' cy='50' r='6' fill='%23C99219'/></svg>">
+<title>Sentrel for Pest Control &mdash; Never miss another job</title>
 <style>
 
   :root {
-    --ink: #0F3D5C;
-    --ink-soft: #5A7A8E;
-    --paper: #F0F7FA;
-    --paper-2: #DCEEF5;
-    --rule: #B8DCEC;
-    --accent: #E07B27;
-    --accent-dark: #B85D14;
-    --check: #0F3D5C;
+    --ink: #1F3D24;
+    --ink-soft: #5C7359;
+    --paper: #F4F8E8;
+    --paper-2: #E5EFD2;
+    --rule: #C9D9B0;
+    --accent: #C99219;
+    --accent-dark: #9A6F0F;
+    --check: #1F3D24;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -60,7 +60,7 @@
   .hero h1 em {
     font-style: normal;
     color: var(--accent);
-    background-image: linear-gradient(transparent 62%, rgba(224, 123, 39, 0.28) 62%);
+    background-image: linear-gradient(transparent 62%, rgba(201, 146, 25, 0.28) 62%);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: background-size 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 0.5s;
@@ -281,7 +281,7 @@
     color: var(--paper);
   }
   .pain-card p {
-    color: #B8DCEC;
+    color: #C9D9B0;
     font-size: 16px;
   }
 
@@ -358,8 +358,8 @@
     font-size: 15px;
   }
   .msg.from-sentrel {
-    background: #FBE9D8;
-    border-color: #F0CDA6;
+    background: #F6E8C2;
+    border-color: #E2CC8E;
   }
   .msg-label {
     font-size: 11px;
@@ -485,7 +485,7 @@
   }
   .price-row strong { font-weight: 700; }
   .pilot-note {
-    background: #FBE9D8;
+    background: #F6E8C2;
     border-left: 3px solid var(--accent);
     padding: 16px 20px;
     margin-top: 24px;
@@ -571,11 +571,11 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="./" class="logo">Sentrel<span>.</span></a>
+    <a href="../" class="logo">Sentrel<span>.</span></a>
     <div class="nav-links">
-      <a href="./" class="active">Home</a>
-      <a href="services/">What we cover</a>
-      <a href="pricing/">Pricing</a>
+      <a href="../">Home</a>
+      <a href="./" class="active">What we cover</a>
+      <a href="../pricing/">Pricing</a>
       <a href="https://calendly.com/caroline-sentrel/30min" target="_blank" rel="noopener" class="btn"><span>Book a walkthrough</span></a>
     </div>
   </div>
@@ -584,120 +584,60 @@
 <header class="hero">
   <div class="container">
     <div class="hero-tag reveal">
-      <span class="ring-icon">&#9742;</span> For HVAC contractors
+      <span class="ring-icon">&#9881;</span> What we cover
     </div>
-    <h1 class="reveal">When the phone rings, <em>we pick it up.</em></h1>
-    <p class="lead reveal">We answer every call, book the job, and text you the details. You stay on the truck.</p>
+    <h1 class="reveal">Five services. One platform.</h1>
+    <p class="lead reveal">Everything you need to capture, route, and grow your pest control business &mdash; without hiring a back office.</p>
     <div class="hero-ctas reveal">
       <a href="https://calendly.com/caroline-sentrel/30min" target="_blank" rel="noopener" class="btn btn-lg"><span>Book a 15-min walkthrough</span></a>
-      <a href="#how" class="btn btn-ghost"><span>See how it works</span></a>
-    </div>
-    <div class="hero-meta reveal">
-      No hardware. Nothing to learn. <strong>Live in 7 days.</strong>
+      <a href="../pricing/" class="btn btn-ghost"><span>See pricing</span></a>
     </div>
   </div>
 </header>
 
-<div class="stats">
+<section class="block services-block">
   <div class="container">
-    <div class="stats-grid">
-      <div class="reveal">
-        <div class="stat-num"><span>1 in 3</span></div>
-        <div class="stat-label">calls to small HVAC shops goes unanswered</div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <h3>After-hours phone</h3>
+        <p>Wasp swarm at 8pm on a Sunday? We answer, route the call to your on-call tech, and book the treatment for the next stop.</p>
       </div>
-      <div class="reveal">
-        <div class="stat-num"><span data-count-to="320" data-prefix="$">$0</span></div>
-        <div class="stat-label">average lost on a missed service call</div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <h3>Scheduling assistant</h3>
+        <p>Manages quarterly routes, recurring service reminders, and texts customers automatically so techs aren't knocking on empty doors.</p>
       </div>
-      <div class="reveal">
-        <div class="stat-num"><span>24/7</span></div>
-        <div class="stat-label">phone coverage. Nights, weekends, holidays.</div>
+      <div class="service-card reveal">
+        <div class="service-num">03</div>
+        <h3>Outbound growth</h3>
+        <p>Reaches out to past one-time customers, dormant quarterly accounts, and homeowners in target neighborhoods during termite season.</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<section class="block pain">
-  <div class="container">
-    <div class="eyebrow reveal">You know the drill</div>
-    <h2 class="reveal">The phone is ringing. You're on a service call.</h2>
-    <p class="section-lead reveal" style="color:#B8DCEC">Jobs go to whoever picks up first. You can't pick up if you're already in a crawl space.</p>
-    <div class="pain-grid">
-      <div class="pain-card reveal"><h3>Voicemails don't pay.</h3><p>No answer, customer calls the next shop. You never knew the job existed.</p></div>
-      <div class="pain-card reveal"><h3>Whiteboards and sticky notes.</h3><p>Half your day is reading schedules and chasing callbacks. None of it bills.</p></div>
-      <div class="pain-card reveal"><h3>Hire an office person?</h3><p>Good luck finding one. Or training one. Or keeping one.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="how">
-  <div class="container">
-    <div class="eyebrow reveal">How it works</div>
-    <h2 class="reveal">A real conversation. Just not one you have to have.</h2>
-    <p class="section-lead reveal">Sounds like a service coordinator who knows your business. Asks the right questions. Sends you the details.</p>
-
-    <div class="steps">
-      <div class="reveal">
-        <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Customer calls your shop.</h3><p>Forward your line, keep your number. After two rings, we pick up.</p></div></div>
-        <div class="step"><div class="step-num">2</div><div class="step-body"><h3>We ask the right questions.</h3><p>Address. System type. What's wrong. How urgent. Photos by text. Emergencies route to your cell.</p></div></div>
-        <div class="step"><div class="step-num">3</div><div class="step-body"><h3>You get a text.</h3><p>Name, address, system, problem, photos, time slot &mdash; already on the calendar.</p></div></div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3>Web chat</h3>
+        <p>AI chat on your website that engages homeowners researching ants, roaches, or rodents and books the inspection in minutes.</p>
       </div>
-
-      <div class="phone reveal" id="phone-mockup">
-        <div class="phone-header">
-          <span>Text from Sentrel &mdash; 8:42 AM</span>
-          <span class="phone-status">LIVE</span>
-        </div>
-        <div class="msg phone-msg" data-step="1">
-          <div class="msg-label">Incoming call</div>
-          <div class="msg-body">Linda Hernandez calling &mdash; picking up&hellip;</div>
-        </div>
-        <div class="msg phone-msg" data-step="2" id="typing-msg">
-          <div class="msg-label">Sentrel</div>
-          <div class="msg-body">
-            <span class="typing-dots"><span></span><span></span><span></span></span>
-          </div>
-        </div>
-        <div class="msg from-sentrel phone-msg" data-step="3">
-          <div class="msg-label">New service call booked</div>
-          <div class="msg-body"><strong>Linda Hernandez</strong><br>412 Oak St, Springfield<br>AC not cooling &mdash; house is 85&deg; &mdash; photo attached<br><strong>Booked: Today, 2:00&ndash;4:00 PM</strong></div>
-        </div>
-        <div class="msg from-sentrel phone-msg" data-step="4">
-          <div class="msg-label">Heads up</div>
-          <div class="msg-body">Linda was a customer in Sept '24 (system tune-up). Repeat &mdash; text her your ETA.</div>
-        </div>
-        <div class="msg phone-msg" data-step="5">
-          <div class="msg-label">You</div>
-          <div class="msg-body">10-4. Send her my ETA.</div>
-        </div>
+      <div class="service-card reveal">
+        <div class="service-num">05</div>
+        <h3>Analytics</h3>
+        <p>Track recurring conversion, route density, revenue per stop, and which marketing channels actually pay back.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block features" id="features">
+<section class="block features">
   <div class="container">
-    <div class="eyebrow reveal">Built for HVAC</div>
-    <h2 class="reveal">It works the way you already work.</h2>
-    <p class="section-lead reveal">Built for HVAC shops that still print invoices and schedule on a clipboard.</p>
+    <div class="eyebrow reveal">How it fits together</div>
+    <h2 class="reveal">One platform. One number. One dashboard.</h2>
+    <p class="section-lead reveal">Every call, chat, and outbound touch gets logged in one place — so you actually know which jobs came from which channel, and where the leaks are.</p>
 
     <div class="feature-grid">
-      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Knows an emergency from a tune-up.</h3><p>Trained on thousands of real HVAC calls. No-cool emergencies route straight to your cell.</p></div></div>
-      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Photos by text, attached to the job.</h3><p>Your tech rolls up knowing the system, age, and what they're walking into.</p></div></div>
-      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Sends ETAs automatically.</h3><p>Cuts no-shows and "where's my tech?" callbacks.</p></div></div>
-      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Works with what you've got.</h3><p>ServiceTitan, Jobber, Housecall Pro, Google Calendar &mdash; or paper.</p></div></div>
-      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Nights, weekends, heat waves.</h3><p>The phone is always covered. Routine calls get booked for tomorrow.</p></div></div>
-      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>You stay in charge.</h3><p>Set the rules &mdash; what gets booked, what gets passed through.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="quote-section">
-  <div class="container">
-    <blockquote class="reveal">We were missing 15 calls a week in the heat of summer. Sentrel paid for itself in the first month &mdash; booked two big system installs that would've gone to the next shop in the search results.</blockquote>
-    <div class="attribution reveal">
-      <strong>Tom R.</strong>
-      Owner, Riverside Heating &amp; Air
+      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>One number forwards to everything.</h3><p>Keep your existing line. We answer it 24/7 with the same script across calls, chat, and outbound.</p></div></div>
+      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Works with what you've got.</h3><p>PestPac, FieldRoutes, GorillaDesk, Google Calendar &mdash; or paper.</p></div></div>
+      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>Concierge onboarding.</h3><p>We listen to your actual recorded calls, train the AI on your script and pricing, and don't go live until it sounds like you.</p></div></div>
+      <div class="feature reveal"><div class="check">&#10003;</div><div><h3>You stay in charge.</h3><p>Set the rules &mdash; what gets booked, what gets passed through, what gets escalated.</p></div></div>
     </div>
   </div>
 </section>
@@ -713,7 +653,7 @@
 <footer>
   <div class="container">
     <div class="logo">Sentrel<span>.</span></div>
-    <div style="margin-top: 8px;">Built for HVAC. Made in the USA. &copy; Sentrel 2026.</div>
+    <div style="margin-top: 8px;">Built for pest control. Made in the USA. &copy; Sentrel 2026.</div>
   </div>
 </footer>
 
